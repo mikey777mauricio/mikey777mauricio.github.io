@@ -1,0 +1,510 @@
+
+.body1{
+    background: url(/Users/coldpears/Desktop/websitePortfolio/backgroundDramatic.jpeg) no-repeat center center fixed; 
+
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vw 30vw 10vw;
+    grid-gap: 1em; 
+    -webkit-font-smoothing: antialiased;
+ 
+
+    
+}
+
+.body2{
+  background: url(/Users/coldpears/Desktop/websitePortfolio/backgroundDramatic.jpeg) no-repeat center center fixed; 
+
+  background-size: cover;
+  display: inline;
+  grid-gap: 1em; 
+  -webkit-font-smoothing: antialiased;
+
+}
+
+
+
+
+
+.signature{
+  font-family: cursive;
+  font-weight: bolder;
+  color: white;
+  font-style: italic;
+  margin-left: 1em;
+  display: inline-block;
+  color: white;
+  content: '>';
+  padding-right: 40%;
+  
+
+}
+
+#abBody{
+  background: url(/Users/coldpears/Desktop/websitePortfolio/backgroundDramatic.jpeg) no-repeat center center fixed; 
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+#headCon{
+  display:flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center
+}
+
+header{
+  grid-column: 1 / span 5;
+  z-index: 2;
+  
+}
+
+main {
+ grid-column: 1 / span 3; 
+} 
+
+.conmain{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+
+
+#abMain{
+  grid-column: 1 / span 5;
+  
+}
+
+aside {
+  z-index: 1;
+  grid-column: 1/ span 2; 
+  align-items: center;
+  position: absolute;
+  padding-left: 75%;
+  padding-right: 5%;
+  padding-top: 10em;
+  
+}
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  
+  main,
+  aside {
+    grid-column: 1 / span 5;
+  }
+}
+
+#intro{
+    color: white;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+#nametext{
+    font-size: xx-large;
+    text-shadow: black;
+    font-weight: bolder;
+    filter: brightness(150%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    background-color: rgba(40,40,40, .8);
+
+    
+    
+}
+
+h3{
+    font-size: 20px;
+    color: white;
+    text-shadow: white;
+    font-weight: 600;
+    filter: brightness(150%);
+    animation: slide-up 1s  cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+    color: white;
+    line-height: 1.6em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+    @keyframes slide-up {
+        0% { -webkit-transform: translateY(400%); }
+        100% { -webkit-transform: translateY(0); }
+}
+.typewriter h1 {
+
+    text-align: left;
+    width: 60%;
+    font-size: 250%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    text-align: center;
+    animation: 
+      typing 4.0s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent}
+    50% { border-color: white; }
+  }
+
+  .navtable {
+    text-align: left;
+    right: 500px;
+    color: white;
+    height: 40px;
+    margin-right: 2em;
+   
+   
+    
+}
+a{
+  color: white;
+
+  
+}
+
+h1{
+  font-size: larger;
+}
+
+
+
+#image{
+
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  bottom: 0px;
+
+  
+
+}
+
+#imagediv{
+  height: 50%;
+  width: 50%;
+
+}
+
+#contactMe{
+  
+  color: white;
+  margin-top: 25%;
+  border-style:groove ;
+  border-radius: 25px;
+  height: 1.5em;
+  width: 8.5em;
+  border-color: white;
+  background-color: rgba(40,40,40, .8);
+  position: relative;
+  text-align: center;
+  animation: slide-up 1s  cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+}
+
+    @keyframes slide-up {
+        0% { -webkit-transform: translateY(400%); }
+        100% { -webkit-transform: translateY(0); }
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  
+  background-color: transparent;
+  border-radius: 25px;
+  width: 15em;
+  height: 15em;
+  border: 1px solid white;
+  font-size: 65%;
+  font-weight: bold;
+  margin: 5px 5px;
+  position: relative;
+ 
+
+ }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 25px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 25px;
+  
+}
+
+
+
+
+
+#asideText{
+    font-size: 15px;
+    color: white;
+    text-shadow: black;
+    font-weight: bolder;
+    filter: brightness(150%);
+    margin-top: 10%;
+    margin-right: .75em;
+
+    animation: slide-up 1s  cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+}
+
+#aboutmetext{
+  color: white;
+  text-align: center;
+}
+#aboutme{
+  text-align: center;
+}
+
+#bio{
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  background-color: rgba(40,40,40, .8);
+  font-size: 20px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 1.25em;
+  margin-bottom: 1.6em;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+
+}
+
+#expirence{
+  color: white;
+  line-height: 1.6em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+
+}
+figcaption{
+  text-decoration: underline;
+  color: white;
+  font-size: 25px;
+}
+
+ul{
+  list-style: none;
+  margin-left: -2em;
+}
+
+.abLi{
+  padding: .5em;
+}
+
+.fa {
+  padding: 20px;
+  position: relative;
+  
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+  border-radius: 10px;
+  align-items: center;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+ }
+ .nav-links a {
+  color: white;
+
+
+ }
+ /* LOGO */
+ .logo {
+  height: 4em;
+  width: 4em;
+  opacity: .9;
+ }
+ /* NAVBAR MENU */
+ .navtable {
+  display: flex;
+  gap: 1em;
+  font-size: 20px;
+ }
+
+ .navtable li {
+  padding: 5px 14px;
+ }
+
+ #contactblock{
+   height: 100%;
+   width: 100%;
+   
+   margin-top: 6em;
+   padding-right: 3em;
+   text-align: center;
+   color: white;
+   grid-column: 2;
+   
+   
+  
+   
+ }
+
+ .container{
+    height: 50% !important;
+    width: 50% !important;
+
+  
+   
+ }
+
+ #submitTitle{
+   color: white;
+   text-align: center;
+   
+   
+ }
+
+
+
+#contact-intro{
+  color: white;
+  position: relative;
+  top: 5em;
+  grid-column: 1 / 2;
+  text-align: center;
+
+
+
+}
+
+#services{
+
+  
+  color: white;
+  width: 15em;
+  margin-top: 6em;
+  grid-column: 1;
+  align-items: center;
+  text-align: center;
+  margin-left: 7.5em;
+
+
+}
+
+#service{
+  font-size: larger;
+  padding-right: 1.7em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+
+
+
+}
+
+#servicetitle{
+ 
+  padding-right: 1em;
+
+ 
+}
+
+#servicelist{
+
+
+  border-style: groove;
+  border-radius: 25px;
+  border-color: white;
+  width: fit-content;
+  height: fit-content;
+  list-style: none;
+  align-items: center;
+  background-color: rgba(40,40,40, .8);
+  
+
+
+}
+
+
+
+
+ 
+
+
