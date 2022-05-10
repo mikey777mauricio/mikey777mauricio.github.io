@@ -1,6 +1,6 @@
 
 .body1{
-    background: url(/Users/coldpears/Desktop/websitePortfolio/backgroundDramatic.jpeg) no-repeat center center fixed; 
+    background: url(images/backgroundDramatic.jpg) no-repeat center center fixed; 
 
     background-size: cover;
     display: grid;
@@ -14,7 +14,7 @@
 }
 
 .body2{
-  background: url(/Users/coldpears/Desktop/websitePortfolio/backgroundDramatic.jpeg) no-repeat center center fixed; 
+  background: url(images/backgroundDramatic.jpg) no-repeat center center fixed; 
 
   background-size: cover;
   display: inline;
@@ -42,7 +42,7 @@
 }
 
 #abBody{
-  background: url(/Users/coldpears/Desktop/websitePortfolio/backgroundDramatic.jpeg) no-repeat center center fixed; 
+  background: url(images/backgroundDramatic.jpg) no-repeat center center fixed; 
   background-size: cover;
   -webkit-font-smoothing: antialiased;
 
