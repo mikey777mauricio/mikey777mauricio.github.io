@@ -1,4 +1,6 @@
 
+
+/* Body ids  */
 .body1{
     background: url(images/backgroundDramatic.jpg) no-repeat center center fixed; 
 
@@ -23,37 +25,7 @@
 
 }
 
-
-
-
-
-.signature{
-  font-family: cursive;
-  font-weight: bolder;
-  color: white;
-  font-style: italic;
-  margin-left: 1em;
-  display: inline-block;
-  color: white;
-  content: '>';
-  padding-right: 40%;
-  
-
-}
-
-#abBody{
-  background: url(images/backgroundDramatic.jpg) no-repeat center center fixed; 
-  background-size: cover;
-  -webkit-font-smoothing: antialiased;
-
-}
-
-#headCon{
-  display:flex; 
-  flex-direction: row; 
-  justify-content: center; 
-  align-items: center
-}
+/* Header and Main */
 
 header{
   grid-column: 1 / span 5;
@@ -65,36 +37,14 @@ main {
  grid-column: 1 / span 3; 
 } 
 
-.conmain{
+.contactMain{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
 
 }
 
-
-
-#abMain{
-  grid-column: 1 / span 5;
-  
-}
-
-aside {
-  z-index: 1;
-  grid-column: 1/ span 2; 
-  align-items: center;
-  position: absolute;
-  padding-left: 75%;
-  padding-right: 5%;
-  padding-top: 10em;
-  
-}
-
-
-
-
-
-
+/* Aside and Main columns */
 
 @media (max-width: 700px) {
   
@@ -104,6 +54,7 @@ aside {
   }
 }
 
+/* Introduction Div */
 #intro{
     color: white;
     position: relative;
@@ -112,21 +63,11 @@ aside {
     text-align: center;
 }
 
-#nametext{
-    font-size: xx-large;
-    text-shadow: black;
-    font-weight: bolder;
-    filter: brightness(150%);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: auto;
-    background-color: rgba(40,40,40, .8);
 
-    
-    
-}
+
 
 h3{
-    font-size: 20px;
+    font-size: 1.5em;
     color: white;
     text-shadow: white;
     font-weight: 600;
@@ -136,12 +77,17 @@ h3{
     line-height: 1.6em;
     letter-spacing: .2em;
     text-transform: uppercase;
-}
+} 
+
+/*  Slide up animation */
 
     @keyframes slide-up {
         0% { -webkit-transform: translateY(400%); }
         100% { -webkit-transform: translateY(0); }
+
 }
+
+/* typewriter effect */
 .typewriter h1 {
 
     text-align: left;
@@ -170,28 +116,44 @@ h3{
     50% { border-color: white; }
   }
 
-  .navtable {
+
+/* Nav table */
+.navtable {
     text-align: left;
     right: 500px;
     color: white;
     height: 40px;
     margin-right: 2em;
    
-   
-    
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+ }
+ .nav-links a {
+  color: white;
+
+
+ }
+
+/* Links */
 a{
   color: white;
 
-  
 }
+
+/* h1 text  */
 
 h1{
-  font-size: larger;
+  font-size: 3em !important;
 }
 
 
-
+/* self image  */
 #image{
 
   height: 400px;
@@ -209,7 +171,9 @@ h1{
 
 }
 
-#contactMe{
+
+/* Current Project and Contact me Container */
+#currentProj{
   
   color: white;
   margin-top: 25%;
@@ -291,17 +255,7 @@ h1{
 
 
 
-#asideText{
-    font-size: 15px;
-    color: white;
-    text-shadow: black;
-    font-weight: bolder;
-    filter: brightness(150%);
-    margin-top: 10%;
-    margin-right: .75em;
-
-    animation: slide-up 1s  cubic-bezier(0.4, 0, 0.2, 1) 100ms;
-}
+/* About Me Page Text */
 
 #aboutmetext{
   color: white;
@@ -330,18 +284,7 @@ h1{
 
 }
 
-#expirence{
-  color: white;
-  line-height: 1.6em;
-  letter-spacing: .2em;
-  text-transform: uppercase;
 
-}
-figcaption{
-  text-decoration: underline;
-  color: white;
-  font-size: 25px;
-}
 
 ul{
   list-style: none;
@@ -350,6 +293,13 @@ ul{
 
 .abLi{
   padding: .5em;
+}
+
+/* Social Media Stuff */
+
+#socialBlock{
+  height: auto;
+  width: 5em;
 }
 
 .fa {
@@ -383,18 +333,7 @@ ul{
   color: white;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  color: #fff;
- }
- .nav-links a {
-  color: white;
 
-
- }
  /* LOGO */
  .logo {
   height: 4em;
@@ -455,6 +394,7 @@ ul{
 
 }
 
+/* Services Div */
 #services{
 
   
@@ -469,6 +409,8 @@ ul{
 
 }
 
+/* List item */
+
 #service{
   font-size: larger;
   padding-right: 1.7em;
@@ -479,12 +421,15 @@ ul{
 
 }
 
+/* List title  */
 #servicetitle{
  
   padding-right: 1em;
 
  
 }
+
+/* Service list  */
 
 #servicelist{
 
@@ -502,10 +447,9 @@ ul{
 
 }
 
-#socialBlock{
-  height: auto;
-  width: 5em;
-}
+
+
+
 
 
 
